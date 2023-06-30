@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+
+  "name": "TAPD扩展插件",
+  "description": "复制需求时，将【复制标题&链接】的值更改为【复制 ID&链接】,剪切板同步",
+  "version": "1.0",
+  "action": {
+    "default_icon": "favicon.ico",
+    "default_popup": "popup.html"
+  },
+ "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://www.tapd.cn/*"
+      ]
+    }
+  ]
+}
